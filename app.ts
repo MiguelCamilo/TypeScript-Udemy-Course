@@ -1,12 +1,17 @@
-const add = (n1: number, n2: number, printResult: boolean) => {
-    if (printResult) {
-        console.log(n1 + n2)
-    }
-    return n1 + n2;
+
+const person ={
+    name: 'Miguel',
+    age: 30,
+    hobbies: ['Sports', 'Cooking']
 }
 
-const num1 = 5
-const num2 = 10
-const printResult = true
+// example of how to use type string array or array types
+let favoriteActivities: string[];
+// let favoriteActivities: any[];
+// let favoriteActivities: number[];
 
-add(num1, num2, printResult);
+favoriteActivities = ['Skateboarding'];
+
+person.hobbies.push(favoriteActivities[0])
+
+console.log(person.hobbies);

@@ -1,12 +1,12 @@
-var add = function (n1, n2, printResult) {
-    if (printResult) {
-        console.log(n1 + n2);
-    }
-    else {
-        return n1 + n2;
-    }
+var person = {
+    name: 'Miguel',
+    age: 30,
+    hobbies: ['Sports', 'Cooking']
 };
-var num1 = 5;
-var num2 = 10;
-var printResult = false;
-add(num1, num2, printResult);
+// example of how to use type string array or array types
+var favoriteActivities;
+// let favoriteActivities: any[];
+// let favoriteActivities: number[];
+favoriteActivities = ['Skateboarding'];
+person.hobbies.push(favoriteActivities[0]);
+console.log(person.hobbies);
